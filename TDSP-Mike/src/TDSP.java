@@ -1,75 +1,82 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class TDSP {
-	//TEST
+
+	public static String[] commandArray;
+	public static ArrayList<File> fileArray = new ArrayList<File>();
 	
-	//COMMENT Too
+	public static void main(String[] args) throws FileNotFoundException{
+		Scanner in = new Scanner(System.in);
 
-    public static String[] commandArray;
+		System.out.print("TDSP command: ");
+		String inputCommand = in.nextLine(); 
 
-    public static void main(String[] args) {
+		//split inputCommand into commandArray 
+		splitCommand(inputCommand);
 
-        Scanner in = new Scanner(System.in);
+		//select command
+		selectCommand();
+	}
 
-        System.out.print("TDSP command: ");
-        String command = in.nextLine(); 
+	public static void splitCommand(String command){
+		commandArray = command.split(" ");
+		System.out.println("commandArray: "+ Arrays.toString(commandArray ));
+	}
 
-        /* SPLIT COMMAND AND KEEP IN commandArray */
-        commandSpliting(command);
-        /* CHOOSE COMMAND DUE TO USER INPUT*/
-        commandChoosen();
+	public static void selectCommand() {
+		try {   
+			if(commandArray[0].equals("create")){
+				createIndex();
+			}
+			else if(commandArray[0].equals("save")){
+				saveIndex();
+			}
+			else if(commandArray[0].equals("update")){
+				updateIndex();
+			}
+			else if(commandArray[0].equals("search")){
+				searchIndex();
+			}
+			else{
+				throw new Exception("NO COMMAND");
+			}
+		}
+		catch(Exception e){
+			System.out.println("Error: " + e.getMessage());
+		}
+	}
 
-    }
+	public static void createIndex() {
+		System.out.println("Create Index");
+		for(int i=1;i<commandArray.length;i++){
+			System.out.println(commandArray[i]);
+			
+			//input .txt file into fileArray
+			fileArray.add(new File("C://Users//HP_2//git//TDSP-IR-Project//TDSP-Mike//src"+commandArray[i]));
+		    
+		
+		}
+		
+		//...
+	}
 
-    public static void commandChoosen() {
-        try {   
-                if(commandArray[0].equals("create")){
-                    creatIndex();
-                }
-                else if(commandArray[0].equals("save")){
-                    saveIndex();
-                }
-                else if(commandArray[0].equals("update")){
-                    updateIndex();
-                }
-                else if(commandArray[0].equals("search")){
-                    searchIndex();
-                }
-                else{
-                    throw new Exception("NO COMMAND");
-                }
-            }
-            catch(Exception e){
-                System.out.println("Error: " + e.getMessage());
-            }
-    }
+	public static void saveIndex() {
+		System.out.println("Save");
+		//...
+	}
 
-    public static void creatIndex() {
-        System.out.println("Create Index");
+	public static void updateIndex() {
+		System.out.println("Update");
+		//...
+	}
 
-    }
+	public static void searchIndex() {
+		System.out.println("Search");
+		//...
+	}
 
-    public static void saveIndex() {
-        System.out.println("Save");
-
-    }
-
-    public static void updateIndex() {
-        System.out.println("Update");
-
-    }
-
-    public static void searchIndex() {
-        System.out.println("Search");
-
-    }
-
-    /* SPLIT COMMAND AND KEEP IN commandArray*/
-    public static void commandSpliting(String command){
-
-        commandArray = command.split(" ");
-        System.out.println("commandArray: "+ Arrays.toString(commandArray ));
-
-    }
 }
