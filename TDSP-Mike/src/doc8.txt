@@ -1,0 +1,35 @@
+The following teaching supplencents are available in WileyPLUS and on
+www.wiley.coml go I global/ silberschatz: a set of slides to accompany the
+book, model course syllabi, all C and Java source code, up-to-date errata,
+three case study appendices and the Distributed Communication appendix.
+The WileyPLUS course also contains the simulators and associated exercises,
+additional practice exercises (with solutions) not found in the text, and a
+testbank of additional problems. Students are encouraged to solve the practice
+exercises on their own and then use the provided solutions to check their own
+answers.
+To obtain restricted supplements, such as the solution guide to the exercises
+in the text, contact your local J orne Wiley & Sons sales representative. Note that
+these supplements are available only to faculty who use this text.
+We use the mailman system for communication among the users of Operating
+System Concepts. If you wish to use this facility, please visit the following URL
+and follow the instructions there to subscribe:
+http: I I mailman.cs.yale.edul mailmanllistinfo I os-book
+The mailman mailing-list system provides many benefits, such as an archive
+of postings, as well as several subscription options, including digest and Web
+only. To send messages to the list, send e-mail to:
+os-book@cs.yale.edu
+Depending on the message, we will either reply to you personally or forward
+the message to everyone on the mailing list. The list is moderated, so you will
+receive no inappropriate mail.
+Students who are using this book as a text for class should not use the list
+to ask for answers to the exercises. They will not be provided.
+We have attempted to clean up every error in this new edition, but-as
+happens with operating systems-a few obscure bugs may remain. We would
+appreciate hearing from you about any textual errors or omissions that you
+identify.
+If you would like to suggest improvements or to contribute exercises,
+we would also be glad to hear from you. Please send correspondence to
+os-book-authors@cs.yale.edu.
+This book is derived from the previous editions, the first three of which
+were coauthored by James Peterson. Others who helped us with previous
+editions include Hamid Arabnia, Rida Bazzi, Randy Bentson, David Black,

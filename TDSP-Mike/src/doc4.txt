@@ -1,0 +1,48 @@
+management, and the effectiveness of a particular algorithm depends on
+the situation.
+Storage management. Chapters 10 through 13 describe how the file system,
+mass storage, and I/0 are handled in a modern computer system. The
+file system provides the mechanism for on-line storage of and access
+to both data and programs. We describe the classic internal algorithms
+and structures of storage management and provide a firm practical
+understanding of the algorithms used -their properties, advantages, and
+disadvantages. Our discussion of storage also includes matters related
+to secondary and tertiary storage. Since the I/0 devices that attach to a
+computer vary widely, the operating system needs to provide a wide range
+of functionality to applications to allow them to control all aspects of these
+devices. We discuss system I/O in depth, including I/O system design,
+interfaces, and internal system structures and functions. In many ways,
+I/O devices are the slowest major components of the computer. Because
+they represent a performance bottleneck, we also examine performance
+issues associated with I/0 devices.
+Protection and security. Chapters 14 and 15 discuss the mechanisms
+necessary for the protection and security of computer systems. The
+processes in an operating system must be protected from one another's
+activities, and to provide such protection, we must ensure that only
+processes that have gained proper authorization from the operating system
+can operate on the files, memory, CPU, and other resources of the system.
+Protection is a mechanism for controlling the access of programs, processes,
+or users to the resources defined by a computer system. This mechanism
+must provide a means of specifying the controls to be imposed, as
+well as a means of enforcement. Security protects the integrity of the
+information stored in the system (both data and code), as well as the
+physical resources of the system, from 1.mauthorized access, malicious
+destruction or alteration, and accidental introduction of inconsistency.
+Distributed systems. Chapters 16 through 18 deal with a collection of
+processors that do not share memory or a clock-a distributed system. By
+providing the user with access to the various resources that it maintains, a
+distributed system can improve computation speed and data availability
+and reliability. Such a system also provides the user with a distributed file
+system, which is a file-service system whose users, servers, and storage
+devices are dispersed among the sites of a distributed system. A distributed
+system must provide various mechanisms for process synchronization
+and communication, as well as for dealing with deadlock problems and a
+variety of failures that are not encountered in a centralized system.
+Special-purpose systems. Chapters 19 and 20 deal with systems used for
+specific purposes, including real-time systems and multimedia systems.
+These systems have specific requirements that differ from those of the
+general-purpose systems that are the focus of the remainder of the text.
+Real-time systems may require not only that computed results be "correct"
+but also that the results be produced within a specified deadline period.
+Multimedia systems require quality-of-service guarantees ensuring that
+the multimedia data are delivered to clients within a specific time frame.

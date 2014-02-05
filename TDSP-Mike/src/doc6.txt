@@ -1,0 +1,42 @@
+programs run on any operating system supporting a Java virtual machine
+(or JVM). We illustrate various operating system and networking concepts
+with several Java programs tested using the Java 1.5 JVM.
+We have chosen these three programming environments because it is our
+opinion that they best represent the two most popular models of operating
+systems: Windows and UNIX/Linux, along with the widely used Java environment.
+Most programming examples are written in C, and we expect readers to
+be comfortable with this language; readers familiar with both the C and Java
+languages should easily understand most programs provided in this text.
+In some instances-such as thread creation-we illustrate a specific
+concept using all three programming environments, allowing the reader
+to contrast the three different libraries as they address the same task. In
+other situations, we may use just one of the APis to demonstrate a concept.
+For example, we illustrate shared memory using just the POSIX API; socket
+programming in TCP /IP is highlighted using the Java API.
+As we wrote the Eighth Edition of Operating System Concepts, we were guided
+by the many comments and suggestions we received from readers of our
+previous editions, as well as by our own observations about the rapidly
+changing fields of operating systems and networking. We have rewritten
+material in most of the chapters by bringing older material up to date and
+removing material that was no longer of interest or relevance.
+We have made substantive revisions and organizational changes in many
+of the chapters. Most importantly, we have added coverage of open-source
+operating systems in Chapter 1. We have also added more practice exercises
+for students and included solutions in WileyPLUS, which also includes new
+simulators to provide demonstrations of operating-system operation. Below,
+we provide a brief outline of the major changes to the various chapters:
+Chapter 1, Introduction, has been expanded to include multicore CPUs,
+clustered computers, and open-source operating systems.
+Chapter 2, System Structures, provides significantly updated coverage of
+virtual machines, as well as multicore CPUs, the GRUB boot loader, and
+operating-system debugging.
+Chapter 3, Process Concept, provides new coverage of pipes as a form of
+interprocess communication.
+Chapter 4, Multithreaded Programming, adds new coverage of programming
+for multicore systems.
+Chapter 5, Process Scheduling, adds coverage of virtual machine scheduling
+and multithreaded, multicore architectures.
+Chapter 6, Synchronization, adds a discussion of mutual exclusion locks,
+priority inversion, and transactional memory.
+Chapter 8, Memory-Management Strategies, includes discussion of
+NUMA.

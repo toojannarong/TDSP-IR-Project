@@ -1,0 +1,29 @@
+Abraham Silberschatz is the Sidney J. Weinberg Professor & Chair of Computer
+Science at Yale University. Prior to joining Yale, he was the Vice President
+of the Information Sciences Research Center at Bell Laboratories. Prior to that,
+he held a chaired professorship in the Department of Computer Sciences at the
+University of Texas at Austin.
+Professor Silberschatz is an ACM Fellow and an IEEE Fellow. He received
+the 2002 IEEE Taylor L. Booth Education Award, the 1998 ACM Karl V. Karlstrom
+Outstanding Educator Award, and the 1997 ACM SIGMOD Contribution
+Award. In recognition of his outstanding level of innovation and technical
+excellence, he was awarded the Bell Laboratories President's Award for three
+different projects-the QTM Project (1998), the DataBlitz Project (1999), and
+the Netlnventory Project (2004).
+Professor Silberschatz' writings have appeared in numerous ACM and
+IEEE publications and other professional conferences and journals. He is a
+coauthor of the textbook Database System Concepts. He has also written Op-Ed
+articles for the New York Times, the Boston Globe, and the Hartford Courant,
+among others.
+Peter Baer Galvin is the chief technologist for Corporate Technologies
+(www.cptech.com), a computer facility reseller and integrator. Before that, Mr.
+Galvin was the systems manager for Brown University's Computer Science
+Department. He is also Sun columnist for ;login: magazine. Mr. Galvin has
+written articles for Byte and other magazines, and has written columns for
+Sun World and SysAdmin magazines. As a consultant and trainer, he has given
+talks and taught tutorials on security and system administration worldwide.
+Greg Gagne is chair of the Computer Science department at Westminster
+College in Salt Lake City where he has been teaching since 1990. In addition
+to teaching operating systems, he also teaches computer networks, distributed
+systems, and software engineering. He also provides workshops to computer
+science educators and industry professionals.

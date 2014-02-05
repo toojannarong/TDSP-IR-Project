@@ -1,0 +1,45 @@
+Joseph Boykin, Jeff Brumfield, Gael Buckley, Roy Campbell, P. C. Capon, John
+Carpenter, Gil Carrick, Thomas Casavant, Bart Childs, Ajoy Kum.ar Datta,
+Joe Deck, Sudarshan K. Dhall, Thomas Doeppner, Caleb Drake, M. Racsit
+Eskicioglu, Hans Flack, Robert Fowler, G. Scott Graham, Richard Guy, Max
+Hailperin, Rebecca I-Iartncan, Wayne Hathaway, Christopher Haynes, Don
+Heller, Bruce Hillyer, Mark Holliday, Dean Hougen, Michael Huangs, Ahmed
+Kamet Marty Kewstet Richard Kieburtz, Carol Kroll, Marty K westet Thomas
+LeBlanc, John Leggett, Jerrold Leichter, Ted Leung, Gary Lippman, Carolyn
+Miller, Michael Molloy, Euripides Montagne, Yoichi Muraoka, Jim M. Ng,
+Banu Ozden, Ed Posnak, Boris Putanec, Charles Qualline, John Quarterman,
+Mike Reiter, Gustavo Rodriguez-Rivera, Carolyn J. C. Schauble, Thomas P.
+Skimcer, Yannis Smaragdakis, Jesse St. Laurent, John Stankovic, Adam Stauffer,
+Steven Stepanek, John Sterling, Hal Stern, Louis Stevens, Pete Thomas, David
+Umbaugh, Steve Vinoski, Tommy Wagner, Larry L. Wear, Jolm Werth, James
+M. Westall, J. S. Weston, and Yang Xiang
+Parts of Chapter 12 were derived from a paper by Hillyer and Silberschatz
+[1996]. Parts of Chapter 17 were derived from a paper by Levy and Silberschatz
+[1990]. Chapter 21 was derived from an unpublished manuscript by Stephen
+Tweedie. Chapter 22 was derived from an unpublished manuscript by Dave
+Probert, Cliff Martin, and Avi Silberschatz. Appendix C was derived from
+an unpublished manuscript by Cliff Martin. Cliff Martin also helped with
+updating the UNIX appendix to cover FreeBSD. Some of the exercises and
+accompanying solutions were supplied by Arvind Krishnamurthy.
+Mike Shapiro, Bryan Cantrill, and Jim Mauro answered several Solarisrelated
+questions. Bryan Cantrill from Sun Microsystems helped with the ZFS
+coverage. Steve Robbins of the University of Texas at San Antonio designed
+the set of simulators that we incorporate in WileyPLUS. Reece Newman
+of Westminster College initially explored this set of simulators and their
+appropriateness for this text. Josh Dees and Rob Reynolds contributed coverage
+of Microsoft's .NET. The project for POSIX message queues was contributed by
+John Trona of Saint Michael's College in Colchester, Vermont.
+Marilyn Turnamian helped generate figures and presentation slides. Mark
+Wogahn has made sure that the software to produce the book (e.g., Latex
+macros, fonts) works properly.
+Our Associate Publisher, Dan Sayre, provided expert guidance as we
+prepared this edition. He was assisted by Carolyn Weisman, who managed
+many details of this project smoothly. The Senior Production Editor Ken
+Santor, was instrumental in handling all the production details. Lauren Sapira
+and Cindy Jolmson have been very helpful with getting material ready and
+available for WileyPlus.
+Beverly Peavler copy-edited the manuscript. The freelance proofreader was
+Katrina Avery; the freelance indexer was Word Co, Inc.
+Abraham Silberschatz, New Haven, CT, 2008
+Peter Baer Galvin, Burlington, MA 2008
+Greg Gagne, Salt Lake City, UT, 2008

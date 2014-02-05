@@ -1,0 +1,45 @@
+Case studies. Chapters 21 through 23 in the book, and Appendices A
+through C (which are available on www.wiley.comJ go I global/ silberschatz
+and in WileyPLUS), integrate the concepts described in the earlier chapters
+by describing real operating systems. These systems include Linux,
+Windows XP, FreeBSD, Mach, and Windows 2000. We chose Linux
+and FreeBSD because UNIX-at one time-was almost small enough
+to understand yet was not a "toy" operating system. Most of its
+internal algorithms were selected for simplicity, rather than for speed
+or sophistication. Both Linux and FreeBSD are readily available to
+computer-science departments, so many students have access to these
+systems. We chose Windows XP and Windows 2000 because they provide
+an opporhmity for us to study a modern operating system with a design
+and implementation drastically different from those of UNIX. Chapter 23
+briefly describes a few other influential operating systems.
+This book uses examples of many real-world operating systems to illustrate
+fundamental operating-system concepts. However, particular attention is paid
+to the Microsoft family of operating systems (including Windows Vista,
+Windows 2000, and Windows XP) and various versions of UNIX (including
+Solaris, BSD, and Mac OS X). We also provide a significant amount of coverage
+of the Linux operating system reflecting the most recent version of the kernel
+-Version 2.6-at the time this book was written.
+The text also provides several example programs written in C and
+Java. These programs are intended to run in. the following programming
+environments:
+Windows systems. The primary programming environment for Windows
+systems is the Win32 API (application programming interface), which provides
+a comprehensive set of functions for managing processes, threads,
+memory, and peripheral devices. We provide several C programs illustrating
+the use of the Win32 API. Example programs were tested on systems
+rum1.ing Windows Vista, Windows 2000, and Windows XP.
+POSIX. POSIX (which stands for Portable Operating System Inte1jace) represents
+a set of standards implemented primarily for UNIX-based operating
+systems. Although Windows Vista, Windows XP, and Windows 2000 systems
+can also run certain POSIX programs, our coverage of POSIX focuses
+primarily on UNIX and Linux systems. POSIX-compliant systems must
+implement the POSIX core standard (POSIX.1): Linux, Solaris, and Mac OS
+X are examples of POSIX-compliant systems. POSIX also defines several
+extensions to the standards, including real-time extensions (POSIXl.b) and
+an extension for a threads library (POSIX1.c, better known as Pthreads). We
+provide several programn1.ing examples written inC illustrating the POSIX
+base API, as well as Pthreads and the extensions for real-time programming.
+These example programs were tested on Debian Linux 2.4 and 2.6 systems,
+Mac OS X 10.5, and Solaris 10 using the gee 3.3 and 4.0 compilers.
+Java. Java is a widely used programming language with a rich API and
+built-in language support for thread creation and management. Java

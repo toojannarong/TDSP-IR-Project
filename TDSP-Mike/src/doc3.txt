@@ -1,0 +1,43 @@
+The organization of this text reflects our many years of teaching courses on
+operating systems. Consideration was also given to the feedback provided by
+the reviewers of the text, as well as comments submitted by readers of earlier
+editions. In addition, the content of the text corresponds to the suggestions
+from Computing Curricula 2005 for teaching operating systems, published by
+the Joint Task Force of the IEEE Computing Society and the Association for
+Computing Machinery (ACM).
+On the supporting Web site for this text, we provide several sample
+syllabi that suggest various approaches for using the text in both introductory
+and advanced courses. As a general rule, we encourage readers to progress
+sequentially through the chapters, as this strategy provides the most thorough
+study of operating systems. However, by using the sample syllabi, a reader can
+select a different ordering of chapters (or subsections of chapters).
+On-line support for the text is provided by WileyPLUS. On this site, students
+can find sample exercises and programming problems, and instructors can
+assign and grade problems. In addition, in WileyPLUS, students can access new
+operating-system simulators, which are used to work through exercises and
+hands-on lab activities. References to the simulators and associated activities
+appear at the ends of several chapters in the text.
+The text is organized in nine major parts:
+Overview. Chapters 1 and 2 explain what operating systems are, what they
+do, and how they are designed and constructed. These chapters discuss what
+the common features of an operating system are, what an operating system
+does for the user, and what it does for the computer-system operator. The
+presentation is motivational and explanatory in nature. We have avoided a
+discussion of how things are done internally in these chapters. Therefore,
+they are suitable for individual readers or for students in lower-level classes
+who want to learn what an operating system is without getting into the
+details of the internal algorithms.
+Process management and Process coordination. Chapters 3 through 7
+describe the process concept and concurrency as the heart of modern
+operating systems. A process is the unit of work in a system .. Such
+a system consists of a collection of concurrently executing processes,
+some of which are operating-system processes (those that execute system
+code) and the rest of which are user processes (those that execute user
+code). These chapters cover n1.ethods for process scheduling, interprocess
+communication, process synchronization, and deadlock handling. Also
+included is a discussion of threads, as well as an examination of issues
+related to multicore systems.
+Memory management. Chapters 8 and 9 deal with the management of
+main memory during the execution of a process. To improve both the
+utilization of the CPU and the speed of its response to its users, the
+computer must keep several processes in memory. There are many different

@@ -1,0 +1,39 @@
+Chapter 9, Virtual-Memory Management, updates the Solaris example to
+include Solaris 10 memory managernent.
+Chapter 10, File System, is updated with current technologies and
+capacities.
+Chapter 11, Implementing File Systems, includes a full description of
+Sun's ZFS file system and expands the coverage of volumes and directories.
+Chapter 12, Secondary-Storage Structure, adds coverage of iSCSI, volumes,
+and ZFS pools.
+Chapter 13, I/0 Systems, adds coverage of PCIX PCI Express, and HyperTransport.
+Chapter 16, Distributed Operating Systems, adds coverage of 802.11
+wireless networks.
+Chapter 21, The LimiX System, has been updated to cover the latest version
+of the LimiX kernel.
+Chapter 23, Influential Operating Systems, increases coverage of very
+early computers as well as TOPS-20, CP/M, MS-DOS, Windows, and the
+original Mac OS.
+To emphasize the concepts presented in the text, we have added several
+programming problems and projects that use the POSIX and Win32 APis, as
+well as Java. We have added more than 15 new programming problems, which
+emphasize processes, threads, shared memory, process synchronization, and
+networking. In addition, we have added or modified several programming
+projects that are more involved than standard programming exercises. These
+projects include adding a system call to the Linux kernel, using pipes on
+both UNIX and Windows systems, using UNIX message queues, creating
+multithreaded applications, and solving the producer-consumer problem
+using shared memory.
+The Eighth Edition also incorporates a set of operating-system simulators
+designed by Steven Robbins of the University of Texas at San Antonio. The
+simulators are intended to model the behavior of an operating system as it
+performs various tasks, such as CPU and disk-head schedulil1.g, process creation
+and interprocess communication, starvation, and address translation. These
+simulators are written in Java and will run on any computer systern with
+Java 1.4. Students can download the simulators from WileyPLUS and observe
+the behavior of several operating system concepts in various scenarios. In
+addition, each simulator includes several exercises that ask students to set
+certain parameters of the simulator, observe how the system behaves, and then
+explain this behavior. These exercises can be assigned through WileyPLUS. The
+WileyPLUS course also includes algorithmic problems and tutorials developed
+by Scott M. Pike of Texas A&M University.
