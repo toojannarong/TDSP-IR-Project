@@ -65,7 +65,7 @@ public class TDSP {
 		for(int i=0;i<fileArray.size();i++){
 			String fileName = "C:/Users/HP_2/git/TDSP-IR-Project/TDSP-Mike/src/"+fileArray.get(i).getName(); 
 			System.out.println(">Read "+fileName);
-
+			System.out.println();
 			Scanner in = new Scanner(fileArray.get(i));
 
 			//read each line
@@ -78,19 +78,19 @@ public class TDSP {
 
 			//read each word of each line
 			ArrayList<String[]> eachWord = new ArrayList<String[]>();
-		
+
 			for(int j=0;j<eachLine.size();j++){
 				String[] temp =eachLine.get(j).split(" ");
 				eachWord.add(temp);
 			}
-		
+
 			for(int j=0;j<eachWord.size();j++){
 				for(int k=0;k<eachWord.get(j).length;k++){
-					
-				    System.out.println("Doc #: "+(i+1));
-				    System.out.println("Line #: "+(j+1));
-				    System.out.println("Word #: "+(k+1));
-					System.out.println(eachWord.get(j)[k]+" ");
+					System.out.print(eachWord.get(j)[k]+" ");
+					System.out.print("- ");
+					System.out.print("Doc:"+(i+1)+" | ");
+					System.out.print("Line:"+(j+1)+" | ");
+					System.out.print("Word:"+(k+1));
 					System.out.println();
 				}
 				System.out.println();
