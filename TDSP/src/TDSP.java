@@ -1,76 +1,135 @@
+// Revise by Too #1
+// Added Tree Insertion
 import java.util.Arrays;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class TDSP {
-	//TEST
+
+	public static String[] commandArray;
+	public static ArrayList<File> fileArray = new ArrayList<File>();
 	
-	//COMMENT Too
-    //MIKE
-	
-    public static String[] commandArray;
+	public static void main(String[] args) throws FileNotFoundException{
+		
+		Scanner in = new Scanner(System.in);
 
-    public static void main(String[] args) {
+		System.out.print("TDSP command: ");
+		String inputCommand = in.nextLine(); 
 
-        Scanner in = new Scanner(System.in);
+		//split inputCommand into commandArray 
+		splitCommand(inputCommand);
 
-        System.out.print("TDSP command: ");
-        String command = in.nextLine(); 
+		//select command
+		selectCommand();
+	}
 
-        /* SPLIT COMMAND AND KEEP IN commandArray */
-        commandSpliting(command);
-        /* CHOOSE COMMAND DUE TO USER INPUT*/
-        commandChoosen();
+	public static void splitCommand(String command){
+		commandArray = command.split(" ");
+		System.out.println("commandArray: "+ Arrays.toString(commandArray ));
+	}
 
-    }
+	public static void selectCommand() {
+		try {   
+			if(commandArray[0].equals("create")){
+				createIndex();
+			}
+			else if(commandArray[0].equals("save")){
+				saveIndex();
+			}
+			else if(commandArray[0].equals("update")){
+				updateIndex();
+			}
+			else if(commandArray[0].equals("search")){
+				searchIndex();
+			}
+			else{
+				throw new Exception("NO COMMAND");
+			}
+		}
+		catch(Exception e){
+			System.out.println("Error: " + e.getMessage());
+		}
+	}
 
-    public static void commandChoosen() {
-        try {   
-                if(commandArray[0].equals("create")){
-                    creatIndex();
-                }
-                else if(commandArray[0].equals("save")){
-                    saveIndex();
-                }
-                else if(commandArray[0].equals("update")){
-                    updateIndex();
-                }
-                else if(commandArray[0].equals("search")){
-                    searchIndex();
-                }
-                else{
-                    throw new Exception("NO COMMAND");
-                }
-            }
-            catch(Exception e){
-                System.out.println("Error: " + e.getMessage());
-            }
-    }
+	public static void createIndex() throws IOException {
+		System.out.println(">Create Index");
+		for(int i=1;i<commandArray.length;i++){
+			//input .txt file into fileArray
+			//PLEASE CHANGE FILE DIRECTORY
+			String fileName = "..//TDSP/src/"+commandArray[i]+".txt";
+			System.out.println(fileName);
+			fileArray.add(new File(fileName));
+			System.out.println(">Add "+fileName);
+		}
+		System.out.println();
 
-    public static void creatIndex() {
-        System.out.println("Create Index");
+		//read each document 
+		for(int i=0;i<fileArray.size();i++){
+			String fileName = "..//TDSP/src/"+fileArray.get(i).getName(); 
+			System.out.println(">Read "+fileName);
+			System.out.println();
+			Scanner in = new Scanner(fileArray.get(i));
 
-    }
+			//read each line
+			ArrayList<String> eachLine = new ArrayList<String>();
+			while(in.hasNextLine()){
+				String line = in.nextLine();
+				//System.out.println(line);
+				eachLine.add(line);
+			}
 
-    public static void saveIndex() {
-        System.out.println("Save");
+			//read each word of each line
+			ArrayList<String[]> eachWord = new ArrayList<String[]>();
 
-    }
+			for(int j=0;j<eachLine.size();j++){
+				String[] temp =eachLine.get(j).split(" ");
+				eachWord.add(temp);
+			}
+			NonPersistentTree tree = new NonPersistentTree();
 
-    public static void updateIndex() {
-        System.out.println("Update");
+			for(int j=0;j<eachWord.size();j++){
+				for(int k=0;k<eachWord.get(j).length;k++){
+					/*
+					System.out.print(eachWord.get(j)[k]+" ");
+					System.out.print("- ");
+					System.out.print("Doc:"+(i+1)+" | ");
+					System.out.print("Line:"+(j+1)+" | ");
+					System.out.print("Word:"+(k+1));
+					System.out.println();
+					*/
+					
+				
+					 tree.insertWord(eachWord.get(j)[k], new WordPosition(i+1,j+1,k+1, eachWord.get(j)[k]));
+				}
+				System.out.println();
+				
+				
+			}
+			 
+	          
+			//finish this doc, go to next doc
+			in.close();
+			System.out.println();
+		}
 
-    }
+	}
 
-    public static void searchIndex() {
-        System.out.println("Search");
+	public static void saveIndex() {
+		System.out.println(">Save");
+		//...
+	}
 
-    }
+	public static void updateIndex() {
+		System.out.println(">Update");
+		//...
+	}
 
-    /* SPLIT COMMAND AND KEEP IN commandArray*/
-    public static void commandSpliting(String command){
+	public static void searchIndex() {
+		System.out.println(">Search");
+		//...
+	}
 
-        commandArray = command.split(" ");
-        System.out.println("commandArray: "+ Arrays.toString(commandArray ));
-
-    }
 }
